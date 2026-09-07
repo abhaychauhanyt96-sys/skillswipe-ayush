@@ -17,6 +17,8 @@ const lora = Lora({
   display: "swap",
 });
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "SkillSwipe — Mutual-Consent Talent & Industry Portal",
   description: "Unified mutual-matching platform connecting students, industries, and academicians for internships, research, and hiring.",
