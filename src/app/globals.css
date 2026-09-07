@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F7F5EF;
+  --foreground: #101830;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar matching paper aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EFECE3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4CEBE;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BAAF96;
+}
+
+/* High-contrast accessible focus ring for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #D4A017 !important;
+  outline-offset: 2px !important;
+}
+
+/* Touch manipulation optimizations for mobile card swiping */
+button, a {
+  touch-action: manipulation;
+}
+
